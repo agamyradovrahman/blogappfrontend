@@ -10,7 +10,7 @@ const Economic = () => {
   useEffect(() => {
     const getart = async () => {
       try {
-        const res = await axios.get(`http://localhost:5000/posts/category/economic`);
+        const res = await axios.get(`https://blogappbackend-rxso.onrender.com/posts/category/economic`);
         const newdata = res.data.post;
 
         setPolitics(newdata);

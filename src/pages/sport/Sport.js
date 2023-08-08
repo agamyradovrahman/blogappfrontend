@@ -10,7 +10,7 @@ const Sport = () => {
   useEffect(() => {
     const getart = async () => {
       try {
-        const res = await axios.get(`http://localhost:5000/posts/category/sport`, {category: "sport"});
+        const res = await axios.get(`https://blogappbackend-rxso.onrender.com/posts/category/sport`, {category: "sport"});
         const newdata = res.data.post;
 
         setPolitics(newdata);

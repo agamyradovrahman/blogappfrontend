@@ -10,7 +10,7 @@ const Politic = () => {
   useEffect(() => {
     const getart = async () => {
       try {
-        const res = await axios.get(`http://localhost:5000/posts/category/politic`);
+        const res = await axios.get(`https://blogappbackend-rxso.onrender.com/posts/category/politic`);
         const newdata = res.data.post;
 
         setPolitics(newdata);

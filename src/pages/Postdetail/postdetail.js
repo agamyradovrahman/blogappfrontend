@@ -11,7 +11,7 @@ const Postdetail = () => {
   useEffect(() => {
     const getart = async () => {
       try {
-        const res = await axios.get(`http://localhost:5000/posts/${params.id}`);
+        const res = await axios.get(`https://blogappbackend-rxso.onrender.com/posts/${params.id}`);
         const newdata = res.data.post;
 
         setPost(newdata);
